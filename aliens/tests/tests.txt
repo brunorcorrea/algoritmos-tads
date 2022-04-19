@@ -1,0 +1,3 @@
+gcc main.c -o main && ./main < tests/arq1.in > out.res && sdiff -s out.res tests/arq1.res
+gcc main.c -o main && ./main < tests/arq2.in > out.res && sdiff -s out.res tests/arq2.res
+gcc main.c -o main && ./main < tests/arq3.in > out.res && sdiff -s out.res tests/arq3.res

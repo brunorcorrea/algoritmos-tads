@@ -1,0 +1,3 @@
+Caracteristicas Iguais
+Caracteristicas Diferentes
+Caracteristicas Iguais
