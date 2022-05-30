@@ -1,2 +1,2 @@
-Distancia total entre 1 e 4: 70
-Caminho: 1->0->3->2->4
+Distancia total entre 0 e 3: 130
+Caminho: 0->1->2->4->3
