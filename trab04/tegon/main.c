@@ -3,9 +3,8 @@
 
 int main()
 {
-
     char vet[1002];
-    int a = 0, b = 0, l = 0, j = 0, v = 0;
+    int a = 0, b = 0, l = 0, j = 0, v = 0, x = 0;
     int grafico1 = 0;
     int grafico2 = 0;
     int grafico3 = 0;
@@ -33,62 +32,53 @@ int main()
         vet_numero[a] = 0;
     }
 
-    while ((vet[0] != 'F') && (vet[1] != 'I') && (vet[2] != 'M'))
+    while (1)
     {
         fgets(vet, 1002, stdin);
         if ((vet[0] == 'F') && (vet[1] == 'I') && (vet[2] == 'M'))
         {
             break;
         }
-        for (int i = 0; i < 1002; i++)
+
+        for (a = 0; a < strlen(vet); a++)
         {
-            //if (vet[i] == '\0')
-              //  break;
+            x = 0;
 
-            for (a = 65; a <= 90; a++)
+            if ((vet[a] >= 65) && (vet[a] <= 90))
             {
-                grafico1 = 0;
-                v = vet[i];
-                if (v == a)
+                for (b = 65; b <= 90; b++, x++)
                 {
-                    grafico1++;
-                    quant++;
+                    if (vet[a] == b)
+                    {
+                        vet_maiusculo[x]++;
+                        quant++;
+                    }
                 }
-                vet_maiusculo[l] = grafico1;
-                l++;
             }
-
-            l = 0;
-
-            for (a = 97; a <= 122; a++)
+            else if ((vet[a] >= 97) && (vet[a] <= 122))
             {
-                grafico2 = 0;
-                v = vet[i];
-                if (v == a)
+                for (b = 97; b <= 122; b++, x++)
                 {
-                    grafico2++;
-                    quant++;
+                    if (vet[a] == b)
+                    {
+                        vet_minusculo[x]++;
+                        quant++;
+                    }
                 }
-                vet_minusculo[l] = grafico2;
-                l++;
             }
-
-            l = 0;
-
-            for (a = 48; a <= 57; a++)
+            else if ((vet[a] >= 48) && (vet[a] <= 57))
             {
-                grafico3 = 0;
-                v = vet[i];
-                if (v == a)
+                for (b = 48; b <= 57; b++, x++)
                 {
-                    grafico3++;
-                    quant++;
+                    if (vet[a] == b)
+                    {
+                        // printf("%c: %d\n", b, vet_numero[x] + 1);
+                        vet_numero[x]++;
+                        quant++;
+                    }
                 }
-                vet_numero[l] = grafico3;
-                l++;
             }
         }
-
         vet[0] = '\0';
     }
 
