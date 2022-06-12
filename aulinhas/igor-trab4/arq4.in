@@ -1,0 +1,139 @@
+Linux é um termo utilizado para se referir a sistemas operativos (português europeu) ou sistemas operacionais (português brasileiro) que utilizem o núcleo Linux. O núcleo Linux foi desenvolvido pelo programador finlandês Linus Torvalds, inspirado no sistema Minix. O seu código fonte está disponível sob a licença GPL (versão 2) para que qualquer pessoa o possa utilizar, estudar, modificar e distribuir livremente de acordo com os termos da licença.
+Inicialmente desenvolvido e utilizado por grupos de entusiastas em computadores pessoais, os sistemas operativos (português europeu) ou sistemas operacionais (português brasileiro) com núcleo Linux passaram a ter a colaboração de grandes empresas como IBM, Sun Microsystems, Hewlett-Packard (HP), Red Hat, Novell, Oracle, Google, Mandriva e Canonical.1
+Apoiado por pacotes igualmente estáveis e cada vez mais versáteis de softwares livres para escritório (LibreOffice, por exemplo) ou de uso geral (projeto GNU) e por programas para micro e pequenas empresas que na maioria dos casos em nada ficam a dever aos seus concorrentes proprietários, e interfaces gráficas cada vez mais amigáveis como o KDE e o GNOME, o núcleo Linux, conhecido por sua estabilidade e robustez, tem gradualmente caído no domínio popular, encontrando-se cada vez mais presente nos computadores de uso pessoal atuais. Há muito entretanto destaca-se como o núcleo preferido em servidores de grandes porte, encontrando-se quase sempre presente nos mainframes de grandes empresas comerciais2 e até mesmo no computador mais rápido do mundo, o K computer, japonês (lista TOP500).
+Índice  [esconder] 
+1 História
+2 Núcleo
+2.1 Arquitetura
+2.2 Portabilidade
+2.3 Termos de licenciamento
+2.4 Sistemas de arquivos suportados
+3 Sistema operacional
+4 Distribuições
+5 Código aberto e programas livres
+6 Controvérsias quanto ao nome
+6.1 Sobre o símbolo
+7 Ver também
+7.1 Eventos
+8 Notas e referências
+9 Ligações externas
+[editar]História
+
+
+
+Linus Torvalds, criador e principal mantenedor do núcleo Linux.
+O núcleo Linux foi, originalmente, escrito por Linus Torvalds do Departamento de Ciência da Computação da Universidade de Helsinki, Finlândia, com a ajuda de vários programadores voluntários através da Usenet (uma espécie de sistema de listas de discussão existente desde os primórdios da Internet).
+Linus Torvalds começou o desenvolvimento do núcleo como um projeto particular, inspirado pelo seu interesse no Minix, um pequeno sistema UNIX desenvolvido por Andrew S. Tanenbaum. Ele limitou-se a criar, nas suas próprias palavras, "um Minix melhor que o Minix" ("a better Minix than Minix"). E depois de algum tempo de trabalho no projecto, sozinho, enviou a seguinte mensagem para comp.os.minix:
+	Você suspira pelos bons tempos do Minix-1.1, quando os homens eram homens e escreviam seus próprios "device drivers"?3 Você está sem um bom projecto em mãos e deseja trabalhar num S.O. que possa modificar de acordo com as suas necessidades? Acha frustrante quando tudo funciona no Minix? Chega de noite ao computador para conseguir que os programas funcionem? Então esta mensagem pode ser exactamente para você. Como eu mencionei há um mês atrás, estou trabalhando numa versão independente de um S.O. similar ao Minix para computadores AT-386. Ele está, finalmente, próximo do estado em que poderá ser utilizado (embora possa não ser o que você espera), e eu estou disposto a disponibilizar o código-fonte para ampla distribuição. Ele está na versão 0.02... contudo eu tive sucesso ao executar bash, gcc, gnu-make, gnu-sed, compress etc. nele.	
+Curiosamente, o nome Linux foi criado por Ari Lemmke, administrador do site ftp.funet.fi que deu esse nome ao diretório FTP onde o núcleo Linux estava inicialmente disponível.4 Linus inicialmente tinha-o batizado como "Freax".5
+No dia 5 de outubro de 1991 Linus Torvalds anunciou a primeira versão "oficial" do núcleo Linux, versão 0.02. Desde então muitos programadores têm respondido ao seu chamado, e têm ajudado a fazer do Linux o sistema operacional que é hoje. No início era utilizado por programadores ou só por quem tinha conhecimentos, usavam linhas de comando. Hoje isso mudou, existem diversas empresas que criam os ambientes gráficos, as distribuições cada vez mais amigáveis de forma que uma pessoa com poucos conhecimentos consegue usar o Linux. Hoje o Linux é um sistema estável e consegue reconhecer muitos periféricos sem a necessidade de se instalar os drivers de som, vídeo, modem, rede, entre outros.
+[editar]Núcleo
+
+Ver artigo principal: Linux (núcleo)
+
+
+GNOME Shell, interface gráfica para Linux
+
+
+KDE ,interface gráfica para Linux
+
+
+Gerenciador de janelas OpenGL
+O termo Linux refere-se ao núcleo (em inglês: "kernel") do sistema operativo. O termo também é usado pelos meios de comunicação e usuários para referir-se aos sistemas operacionais baseados no núcleo Linux agregado a outros programas. Segundo Tanenbaum e Silberschatz, um núcleo pode ser considerado o próprio sistema operativo, quando este é definido como um gerenciador de recursos de hardware.
+[editar]Arquitetura
+O Linux é um núcleo monolítico: as funções do núcleo (escalonamento de processos, gerenciamento de memória, operações de entrada/saída, acesso ao sistema de arquivos) são executadas no espaço de núcleo. Uma característica do núcleo Linux é que algumas das funções (drivers de dispositivos, suporte à rede, sistema de arquivos, por exemplo) podem ser compiladas e executadas como módulos (em inglês: LKM - loadable kernel modules), que são bibliotecas compiladas separadamente da parte principal do núcleo e podem ser carregadas e descarregadas após o núcleo estar em execução.
+[editar]Portabilidade
+Embora Linus Torvalds não tinha como objetivo inicial tornar o Linux um sistema portátil, ele evoluiu nessa direção. Linux é hoje um dos núcleos de sistemas operativos mais portáteis, correndo em sistemas desde o iPaq (um computador portátil) até o IBM S/390 (um denso e altamente custoso mainframe).
+Os esforços de Linus foram também dirigidos a um diferente tipo de portabilidade. Portabilidade, de acordo com Linus, era a habilidade de facilmente compilar aplicações de uma variedade de código fonte no seu sistema; consequentemente, o Linux originalmente tornou-se popular em parte devido ao esforço para que os códigos-fonte GPL ou outros favoritos de todos corressem em Linux.
+O Linux hoje funciona em dezenas de plataformas, desde mainframes até um relógio de pulso, passando por várias arquitecturas: x86 (Intel, AMD), x86-64 (Intel EM64T, AMD64), ARM, PowerPC, Alpha, SPARC e etc, com grande penetração também em sistemas embarcados, como handhelds, PVR, consola de videojogos, celulares, TVs e centros multimídia, entre outros.
+[editar]Termos de licenciamento
+Inicialmente, Torvalds lançou o Linux sob uma licença de software que proibia qualquer uso comercial. Isso foi mudado de imediato para a GNU General Public License. Essa licença permite a distribuição e mesmo a venda de versões possivelmente modificadas do Linux mas requer que todas as cópias sejam lançadas dentro da mesma licença e acompanhadas do código fonte.
+Apesar de alguns dos programadores que contribuem para o núcleo permitirem que o seu código seja licenciado com GPL versão 2 ou posterior, grande parte do código (incluído as contribuições de Torvalds) menciona apenas a GPL versão 2. Isto faz com que o núcleo como um todo esteja sob a versão 2 exclusivamente, não sendo de prever sua adoção da nova GPLv3.
+[editar]Sistemas de arquivos suportados
+O Linux possui suporte de leitura e escrita a vários sistema de arquivos, de diversos sistemas operacionais, além de alguns sistemas nativos. Por isso, quando o Linux é instalado em dual boot com outros sistemas (Windows, por exemplo) ou mesmo funcionando como Live CD, ele poderá ler e escrever nas partições formatadas em FAT e NTFS. Por isto, Live CDs Linux são muito utilizados na manutenção e recuperação de outros sistemas operacionais.6
+Entre os sistemas de ficheiros suportados pelo Linux, podemos citar UFS (Unix), FAT, NTFS, JFS, XFS, HPFS, Minix e ISO 9660 (sistema de ficheiros usado em CD-ROMs), este último também com as extensões RRIP (IEEE P1282) e ZISOFS7 . Alguns sistemas de ficheiros nativos são, dentre outros, Ext2, Ext3, Ext4, ReiserFS e Reiser4.8 Alguns sistemas de ficheiros com características especiais são SWAP, UnionFS, SquashFS, Tmpfs, Aufs e NFS, dentre outros.
+[editar]Sistema operacional
+
+
+
+Richard Stallman, fundador do projeto GNU para um sistema operacional livre.
+Logo que Linus Torvalds passou a disponibilizar o Linux, ou seja na sua versão 0.01, já havia suporte ao disco rígido, tela, teclado e portas seriais, o sistema de arquivos adotava o mesmo layout do Minix (embora não houvesse código do Minix no Linux), havia extensos trechos em assembly, e ela já era capaz de rodar o bash e o gcc.
+	A linha guia quando implementei o Linux foi: fazê-lo funcionar rápido. Eu queria o núcleo simples, mas poderoso o suficiente para rodar a maioria dos aplicativos Unix.9	
+O próprio usuário deveria procurar os programas que dessem funcionalidade ao seu sistema, compilá-los e configurá-los. Talvez por isso, o Linux tenha carregado consigo a etiqueta de sistema operativo apenas para técnicos. Foi neste ambiente que surgiu a MCC Interim Linux, do Manchester Computer Centre, a primeira distribuição Linux, desenvolvida por Owen Le Blanc da Universidade de Manchester, capaz de ser instalada independentemente em um computador. Foi uma primeira tentativa de facilitar a instalação do Linux.
+Desde o começo, o núcleo Linux incluía um sistema básico para chamadas do sistema e acesso aos dispositivos do computador. O núcleo de um sistema operativo define entre várias operações, o gerenciamento da memória, de processos, dos dispositivos físicos no computador e é uma parte essencial de qualquer sistema operacional utilizável, contudo para um sistema operacional adquirir funcionalidade são necessários também vários outros aplicativos que determinam funções específicas que aquele sistema será capaz de desenvolver, os aplicativos existentes em um sistema operacional com a única exceção do núcleo são determinados pelo usuário do computador, como por exemplo: interpretadores de comandos, gerenciadores de janelas, que oferecem respectivamente uma interface para o usuário do computador, CLI ou GUI, e outros aplicativos como editores de texto, editores de imagem, tocadores de som, e, mas não necessariamente, compiladores.
+A maioria dos sistemas inclui ferramentas e utilitários baseados no BSD e tipicamente usam XFree86 ou X.Org para oferecer a funcionalidade do sistemas de janelas X — interface gráfica. Assim como também oferecem ferramentas desenvolvidas pelo projeto GNU.
+No momento do desenvolvimento do Linux, vários aplicativos já vinham sendo reunidos pelo Projeto GNU da Free Software Foundation (‘Fundação Software Livre’), que embarcara em um subprojeto que ainda continua para obter um núcleo, o GNU Hurd. Porém devido a várias complicações o projeto GNU e demora em desenvolver o Hurd, Stallman acabou adotando o núcleo Linux como base para distribuir os programas do projeto GNU , não obstante diversas pessoas e instituições tiveram a mesma ideia e assim várias distribuições começaram a surgir baseadas no núcleo desenvolvido inicialmente por Linus.
+[editar]Distribuições
+
+Ver artigo principal: Distribuições de Linux
+Atualmente, um Sistema Operacional (em Portugal Sistema Operativo) Linux ou GNU/Linux completo (uma "Lista de distribuições de Linux ou GNU/Linux") é uma coleção de software livre (e por vezes não-livres) criados por indivíduos, grupos e organizações de todo o mundo, incluindo o núcleo Linux. Companhias como a Red Hat, a SuSE, a Mandriva (união da Mandrake com a Conectiva) e a Canonical (desenvolvedora do Ubuntu Linux), bem como projetos de comunidades como o Debian ou o Gentoo, compilam o software e fornecem um sistema completo, pronto para instalação e uso. Patrick Volkerding também fornece uma distribuição Linux, o Slackware.
+As distribuições do Linux ou GNU/Linux começaram a receber uma popularidade limitada desde a segunda metade dos anos 90, como uma alternativa livre para os sistemas operacionais Microsoft Windows e Mac OS, principalmente por parte de pessoas acostumadas com o Unix na escola e no trabalho. O sistema tornou-se popular no mercado de Desktops e servidores, principalmente para a Web e servidores de bancos de dados.
+No decorrer do tempo, várias distribuições surgiram e desapareceram, cada qual com sua característica. Algumas distribuições são maiores outras menores, dependendo do número de aplicações e sua finalidade. Algumas distribuições de tamanhos menores cabem num disquete com 1,44 MB, outras precisam de vários CDs, existindo até algumas versões em DVD.
+Todas elas tem o seu público e sua finalidade, as pequenas (que ocupam poucos disquetes) são usadas para recuperação de sistemas danificados ou em monitoramento de redes de computadores.
+Dentre as maiores, distribuídas em CDs, podem-se citar: Slackware, Debian, Suse, e Conectiva. Cada distribuição é, em tese, um sistema operacional independente, de modo que os programas compilados para uma distribuição podem não rodar em outra, embora usem o mesmo núcleo (o Linux propriamente dito). A distribuição Conectiva Linux, por exemplo, tinha as suas aplicações traduzidas em português, o que facilitou que usuários que falam a Língua Portuguesa tenham aderido melhor a esta distribuição. Hoje esta distribuição foi incorporada à Mandrake, o que resultou na Mandriva. Para o português, existe também a distribuição brasileira Kurumin (essa distribuição foi descontinuada pelo seu mantenedor), construída sobre Knoppix e Debian, e a Caixa Mágica, existente nas versões 32 bits, 64 bits, Live CD 32 bits e Live CD 64 bits, e com vários programas open source: LibreOffice, Mozilla Firefox, entre outros.
+Existem distribuições com ferramentas para configuração que facilitam a administração do sistema.
+As principais diferenças entre as distribuições estão nos seus sistemas de pacotes, nas estruturas dos diretórios e na sua biblioteca básica. Por mais que a estrutura dos diretórios siga o mesmo padrão, o FSSTND é um padrão muito relaxado, principalmente em arquivos onde as configurações são diferentes entre as distribuições. Então normalmente todos seguem o padrão FHS (File Hierarchy System), que é o padrão mais novo. Vale lembrar, entretanto, que qualquer aplicativo ou driver desenvolvido para Linux pode ser compilado em qualquer distribuição que vai funcionar da mesma maneira.
+Quanto à biblioteca, é usada a Biblioteca libc, contendo funções básicas para o sistema Operacional Linux. O problema está quando do lançamento de uma nova versão da Biblioteca libc, algumas das distribuições colocam logo a nova versão, enquanto outras aguardam um pouco. Por isso, alguns programas funcionam numa distribuição e noutras não.
+Existe um movimento LSB (Linux Standard Base) que proporciona uma maior padronização. Auxilia principalmente vendedores de software que não liberam para distribuição do código fonte, sem tirar características das distribuições. O sistemas de pacotes não é padronizado.
+ArchLinux, Debian, Fedora, Mandriva, Mint, Opensuse, PCLinuxOS, Puppy, Sabayon, Slackware e Ubuntu são algumas das distribuições mais utilizadas actualmente, listadas aqui por ordem alfabética.
+Um exemplo de distribuição que corre num CD é o Kurumin Linux, criado por Carlos Eduardo Morimoto, baseada no Knoppix.
+De entre as distribuições consideradas mais difíceis de gerir (por preferirem assegurar a estabilidade tecnológica em detrimento da interface de utilizador), destacam-se a Debian, Gentoo e Slackware.
+Existem também distribuições Linux para sistemas móveis, como tablets e smartphones, sendo o Android, desenvolvido pelo Google, a mais difundida de todas. Outras distribuições Linux para sistemas móveis são o Maemo e o MeeGo.
+[editar]Código aberto e programas livres
+
+Um programa, assim como toda obra produzida atualmente, seja ela literária, artística ou tecnológica, possui um autor. Os Direitos sobre a ideia ou originalidade da obra do autor, que incluem essencialmente distribuição, reprodução e uso é feito no caso de um programa através de sua licença.
+Existem dois movimentos que regem o licenciamento de programas no mundo livre, os programas de código aberto e os programas livres. Os dois representados respectivamente pela OSI e pela FSF oferecem licenças para produção de software, sendo seus maiores representantes a licença BSD e a GPL.
+O Linux oferece muitos aplicativos de open source, contudo nem todos podem ser considerados programas livres, dependendo exclusivamente sob qual licença estes programas são distribuídos. Os programas distribuídos sob tais licenças possuem as mais diversas funcionalidades, como desktops, escritório, edição de imagem e inclusive de outros sistemas operacionais.
+Também existem organizações inclusive no mundo livre como a organização Linux Simples para o Usuário Final (SEUL) que tem como objetivo adotar a maior gama possível de aplicativos de alta qualidade produzidos sobre a GPL. É um projeto voluntário que atualmente se foca no aprendizado de Linux, seu uso na ciência e em documentos de advocacia, bem como gerenciar e coordenar projetos de desenvolvimento de aplicativos.
+[editar]Controvérsias quanto ao nome
+
+Linux foi o nome dado ao núcleo de sistema operacional criado por Linus Torvalds. Por extensão, sistemas operacionais que usam o núcleo Linux são chamados genericamente de Linux. Entretanto, a Free Software Foundation afirma tais sistemas operacionais são, na verdade, sistemas GNU, e o nome mais adequado para tais sistemas é GNU/Linux, uma vez que grande parte do código-fonte dos sistemas operacionais baseados em Linux são ferramentas do projeto GNU.10
+Há muita controvérsia quanto ao nome. Eric Raymond afirma, no Jargon File, que a proposta da FSF só conseguiu a "aceitação de uma minoria" e é resultado de uma "disputa territorial".11 Linus Torvalds afirma que consideraria "justo" que tal nome fosse atribuído a uma distribuição do projeto GNU, mas que chamar os sistemas operacionais Linux como um todo de GNU/Linux seria "ridículo".12 Linus disse não se importar sobre qual o nome usado, considera a proposta da GNU como "válida" ("ok") mas prefere usar o termo "Linux".13
+[editar]Sobre o símbolo
+
+
+Tux.
+O símbolo do software foi escolhido pelo seu criador (Linus Torvalds),que um dia estava no zoológico e foi surpreendido pela mordida de um pinguim. Fato curioso e discutido até hoje.14
+Em 1996, muitos integrantes da lista de discussão "Linux-Kernel" estavam discutindo sobre a criação de um logotipo ou de um mascote que representasse o Linux. Muitas das sugestões eram paródias ao logotipo de um sistema operacional concorrente e muito conhecido (Windows). Outros eram monstros ou animais agressivos. Linus Torvalds acabou entrando nesse debate ao afirmar em uma mensagem que gostava muito de pinguins. Isso foi o suficiente para dar fim à discussão.
+Depois disso, várias tentativas foram feitas numa espécie de concurso para que a imagem de um pinguim servisse aos propósitos do Linux, até que alguém sugeriu a figura de um "pinguim sustentando o mundo". Em resposta, Linus Torvalds declarou que achava interessante que esse pinguim tivesse uma imagem simples: um pinguim "gordinho" e com expressão de satisfeito, como se tivesse acabado de comer uma porção de peixes. Torvalds também não achava atraente a ideia de algo agressivo, mas sim a ideia de um pinguim simpático, do tipo em que as crianças perguntam "mamãe, posso ter um desses também?". Ainda, Torvalds também frisou que trabalhando dessa forma, as pessoas poderiam criar várias modificações desse pinguim. Isso realmente acontece.
+Quando questionado sobre o porquê de pinguins, Linus Torvalds respondeu que não havia uma razão em especial, mas os achava engraçados e até citou que foi bicado por um "pinguim assassino" na Austrália e ficou impressionado como a bicada de um animal aparentemente tão inofensivo podia ser tão dolorosa.
+[editar]Ver também
+
+Outros projetos Wikimedia também contêm material sobre este tema:
+	Livros e manuais no Wikilivros
+	Imagens e media no Commons
+	A Wikipédia possui o portal:
+Software Livre
+Lista de distribuições GNU/Linux
+Comparação entre distribuições Linux
+Comandos Linux
+Lei de Linus
+[editar]Eventos
+FISL (Fórum Internacional de Software Livre)
+Installfest
+Notas e referências
+
+ Members. www.linuxfoundation.org. Página visitada em 23 de fevereiro de 2011.
+ Casas Bahia, a exemplo.
+ Primeiro período do original, em inglês: Do you pine for the nice days of minix-1.1, when men were men and wrote their own device drivers?
+ Lars Wirzenius (27 de abril de 1998). Linux Anecdotes. Página visitada em 15 de junho de 2007.
+ Carlos E. Morimoto. Linux, Ferramentas Técnicas 2ed (em Português). 2 ed. [S.l.]: GDH Press e Sul Editores, 2006. 312 p. ISBN 85-205-0401-9
+ SystemRescueCd is a Linux system rescue disk available as a bootable CD-ROM or USB stick
+ The zisofs filesystem is an extension to the ISO9660 filesystem
+ Reiser4 ainda está em desenvolvimento.
+ No original, em inglês: the guiding line when implementing linux was: get it working fast. I wanted the kernel simple, yet powerful enough to run most unix software.
+ Richard Stallman. Linux and the GNU Project (HTML) (em inglês). Página visitada em 7 de março de 2008.
+ Eric Raymond. Linux (HTML) (em inglês). Página visitada em 7 de março de 2008.
+ Revolution OS, documentário de 2001 sobre o Linux. Produzido, dirigido e escrito por J.T.S. Moore
+ Linus Torvalds (3 de junho de 1996). Lignux, what's the matter with you people? (HTML) (em inglês). Página visitada em 7 de março de 2008.
+ Revista Superinteressante, O Mistério das Marcas, edição 261, janeiro de 2009, p. 34
+[editar]Ligações externas
+
+Controvérsia sobre o nome
+O que é Linux
+O que é o Gnu/Linux
+What is Linux (em inglês)
+GNU/Linux distro timeline (em inglês)
+Linux: The 0.01 Release (em inglês)
+
+FIM
